@@ -1,26 +1,45 @@
+
+
 body
 {
-	background-color: #41aadf;
 	font-family: Times New Roman, Arial, Verdana;
-
+	background-image: url("../image/dorian.jpeg");
+    margin:0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    text-align: center;
+    color: #f3f3f3;
+    margin: 0;
 }
+
 figure
 {
-	float: right;
-	border: 1px solid black;
-	box-shadow: 2px 2px 4px black;
+
+	border: 1px solid rgb(159, 38, 38);
+	box-shadow: #d42e2e;
+
 }
 
 h1
 {
-	text-align: center;
+	text-align: left;
 }
 h2
 {
 	color: rgb(222, 24, 24);
 }
+li
+{
+list-style-type: square; 
+    margin-bottom: 10px; 
+}
 
+li:hover {         
+    color: red; 
+}
 .soustitre
 {
-	text-align: center;
+	text-align: left;
 }
