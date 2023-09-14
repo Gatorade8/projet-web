@@ -1,86 +1,66 @@
-body {
-	background-image: url("../image/nature.jpg");
-	margin: 0;
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	margin: 0;
-	font-family: Times New Roman, Arial, Verdana;
-
+html {
 }
 
-figure {
-	float: right;
+* {
+  margin: 0;
+  padding: 0;
+}
 
-	border: solid black;
-	box-shadow: 2px 2px 4px black;
-	
+body {
+  width: 80%;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+section {
+  border: 2px solid grey;
+  border-radius: 15px;
+  min-width: 300px;
+  margin: 5px;
+  padding: 15px;
+}
+
+section ul {
+  text-indent: 75px;
+  list-style-position: inside;
+}
+
+p {
+  margin: 5px 0;
 }
 
 h1 {
-	text-align: left;
-	color: aliceblue;
+  text-transform: uppercase;
+}
+img {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  width: 200px; /* Réduire la largeur à 50% */
+  height: 200px; /* Réduire la hauteur à 50% */
 }
 
-h2,
-p {
-	color: rgb(244, 224, 224);
+h1,
+h2 {
+  text-align: center;
+  margin: 20px 0;
 }
 
-.soustitre {
-	text-align: left;
+/* ----------------------- MEDIA QUERIES -------------------------- */
+
+@media screen and (max-width: 768px) {
+  img {
+    position: unset;
+    display: block;
+    margin: auto;
+  }
 }
-
-li {
-	list-style-type: square;
-	/* Utilisez "square" pour des carrés */
-	margin-bottom: 10px;
-	/* Espace en bas de chaque élément */
-
-}
-
-
-#competences li {
-    color: rgb(229, 153, 153);
-    transition: color 0.3s; /* Ajoute une transition de couleur pour une animation fluide */
-}
-
-#competences li:hover {
-    color: green; /* Changez la couleur en vert lorsque la souris survole l'élément */
-}
-
-footer {
-	background-color: #3a3131;
-	padding: 0px 0;
-	color: #675ebb;
-  }
-  
-  .container {
-	max-width: 1000px;
-	margin: 0 auto;
-  }
-  
-  h4 {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 20px;
-  }
-  
-  p {
-	font-size: 16px;
-	margin-bottom: 10px;
-  }
-  
-  .social-icons {
-	display: flex;
-  }
-  
-  .social-icons a {
-	margin-right: 20px;
-  }
-  
-  .social-icons img {
-	width: 30px;
-	height: 30px;
-  }
